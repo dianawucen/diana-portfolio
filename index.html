@@ -1,1 +1,84 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="'s portfolio and projects.">
+
+    <title> | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="portfolio">
+        <!-- Top of the pretend browser -->
+        <div class="browser-toolbar">
+            <div class="browser-tab">
+                <span>Portfolio</span>
+                <span aria-hidden="true">×</span>
+            </div>
+
+            <nav class="browser-controls" aria-label="Portfolio navigation">
+                <a href="#projects" aria-label="Go to projects">←</a>
+                <a href="#contact" aria-label="Go to contact">→</a>
+                <a href="#home" aria-label="Go to introduction">⌂</a>
+            </nav>
+        </div>
+
+        <!-- Main browser window -->
+        <div class="browser-window">
+            <section id="home" class="introduction">
+                <div class="portrait">
+                    <!-- Replace this placeholder with your photo:
+                    <img src="images/profile.jpg" alt="image">
+                    -->
+                    <span>Your photo here</span>
+                </div>
+
+                <div class="intro-content">
+                    <p class="eyebrow">CS @ NYU Tandon</p>
+
+                    <h1>Hi, I'm .</h1>
+
+                    <p>
+                        I enjoy building software, exploring game development,
+                        and learning how things work.
+                    </p>
+
+                    <div class="intro-links">
+                        <a href="#projects" class="button">Projects ↗</a>
+                        <a href="#contact" class="button">Contact ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2>Selected projects</h2>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Project name</h3>
+                        <p>What you built, your contribution, and the tools used.</p>
+                        <!-- Add your repository link here. -->
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Project name</h3>
+                        <p>What you built, your contribution, and the tools used.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Let's connect</h2>
+                <a href="mailto:you@example.com">you@example.com</a>
+            </section>
+        </div>
+
+        <!-- Bottom status bar -->
+        <footer class="status-bar">
+            <span>Thanks for stopping by.</span>
+            <span>© 2026 Draft</span>
+        </footer>
+    </main>
+</body>
