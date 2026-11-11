@@ -1,4 +1,3 @@
-/* Theme values reused throughout the page */
 :root {
     --ink: #171717;
     --background: linear-gradient(#b9d4eb 45%);
@@ -29,7 +28,6 @@ a {
     margin: 0 auto;
 }
 
-/* Tab and navigation sit above the window */
 .browser-toolbar {
     display: flex;
     justify-content: space-between;
@@ -80,7 +78,6 @@ a {
     border-radius: 10px;
 }
 
-/* The main outer frame */
 .browser-window {
     border: var(--border);
     background: var(--paper);
@@ -89,7 +86,6 @@ a {
     border-radius: 0px 18px 18px 18px;
 }
 
-/* Two columns: image and introduction */
 .introduction {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
@@ -179,14 +175,13 @@ a:focus-visible {
     outline-offset: 5px;
 }
 
-/* Sections below the introduction */
 .skills-section, .projects-section,
 .contact-section {
     padding: 30px 30px;
     border-top: var(--border);
     scroll-margin-top: 24px;
 
-    padding-top: 5px; /* Previously 40px */
+    padding-top: 5px;
 }
 
 .project-grid {
@@ -203,12 +198,20 @@ a:focus-visible {
     border-radius: 10px;
 }
 
-.project-card > a {
+.click-project-card {
+    border: var(--border);
+    background: linear-gradient(#f9f8f8, #c7f464);
+    transition: background-color 0.2s ease;
+    padding: 14px 24px;
+    border-radius: 10px;
+}
+
+.click-project-card > a {
     display: block;
     text-decoration: none;
 }
 
-.project-card:hover {
+.click-project-card:hover {
     background: linear-gradient(#f9f8f8, #6FA2C7);
 }
 
@@ -228,7 +231,6 @@ a:focus-visible {
     border-radius: 10px;
 }
 
-/* Stack the content on smaller screens */
 @media (max-width: 700px) {
     body {
         padding: 24px 16px;
