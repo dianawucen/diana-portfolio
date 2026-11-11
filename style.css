@@ -120,7 +120,7 @@ a {
 .photo {
     display: grid;
     place-items: center;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 0.9;
     overflow: hidden;
 
     border: var(--border);
@@ -168,7 +168,6 @@ h1 {
     font-weight: 800;
 
     border-radius: 180px 180px 180px 180px;
-
 }
 
 .button:hover {
@@ -197,10 +196,20 @@ a:focus-visible {
 }
 
 .project-card {
-    padding: 14px 24px;
     border: var(--border);
-    border-radius: 10px;
     background: linear-gradient(#f9f8f8, #c7f464);
+    transition: background-color 0.2s ease;
+    padding: 14px 24px;
+    border-radius: 10px;
+}
+
+.project-card > a {
+    display: block;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    background: linear-gradient(#f9f8f8, #6FA2C7);
 }
 
 .status-bar {
